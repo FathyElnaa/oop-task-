@@ -27,13 +27,13 @@ require_once "product.php"
         <?php foreach ($products as $pro) : ?>
             <tbody>
                 <tr>
-                    <td><?= $pro->name ?></td>
-                    <td><?= $pro->price ?></td>
-                    <td><?= $pro->brand ?></td>
-                    <td><?= $pro->description ?></td>
-                    <td><img src="<?= $pro->image ?>" alt="<?= $pro->image ?>" width="80"></td>
-                    <td><?= $pro->price_after_discount(10) ?></td>
-                    <td><?= $pro->final_price() ?></td>
+                    <td><?= $pro->getName() ?></td>
+                    <td><?= $pro->getPrice() ?></td>
+                    <td><?= $pro->getBrand() ?></td>
+                    <td><?= $pro->getDescription() ?></td>
+                    <td><img src="<?= $pro->getImage() ?>" alt="<?= $pro->getImage() ?>" width="80"></td>
+                    <td><?= $pro->getPriceAfterDiscount() ?></td>
+                    <td><?= $pro->getFinalPrice() ?></td>
                 </tr>
 
             </tbody>
